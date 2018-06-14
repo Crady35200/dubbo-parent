@@ -1,6 +1,8 @@
-package com.crady.demo;
+package com.crady.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
+import com.crady.service.DemoService;
+import com.crady.service.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

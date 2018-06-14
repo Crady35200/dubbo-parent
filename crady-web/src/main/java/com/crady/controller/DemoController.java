@@ -1,8 +1,8 @@
 package com.crady.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.crady.demo.DemoService;
-import com.crady.demo.User;
+import com.crady.service.DemoService;
+import com.crady.service.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;

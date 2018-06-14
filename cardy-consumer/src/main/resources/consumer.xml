@@ -10,8 +10,8 @@
     <!-- 使用multicast广播注册中心暴露发现服务地址 -->
     <dubbo:registry address="zookeeper://127.0.0.1:2181" />
 
-    <dubbo:annotation package="com.crady.demo"/>
+    <dubbo:annotation package="com.crady.service"/>
 
     <!-- 生成远程服务代理，可以和本地bean一样使用demoService -->
-    <dubbo:reference id="demoService" interface="com.crady.demo.DemoService" mock="true" retries="3" check="false" loadbalance="roundrobin" />
+    <dubbo:reference id="demoService" interface="com.crady.service.DemoService" mock="true" retries="3" check="false" loadbalance="roundrobin" />
 </beans>
