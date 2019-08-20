@@ -14,14 +14,14 @@ public class Main {
     private static final Logger logger = LoggerFactory.getLogger(Main.class);
 
     public static void main(String[] args) {
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(new String[] {"consumer.xml"});
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"consumer.xml"});
         context.start();
-        DemoService demoService = (DemoService)context.getBean("demoService"); // 获取远程服务代理
+        DemoService demoService = (DemoService) context.getBean("demoService"); // 获取远程服务代理
         for (int i = 0; i < 5; i++) {
 
-        User s = demoService.say("Hi,Crady !"); // 执行远程方法
-        logger.info("^^^^^^^^^^^^^^^^^^^^" + s);
-        logger.info("***************client invoked*************************************");
+            User s = demoService.say("Hi,Crady !"); // 执行远程方法
+            logger.info("^^^^^^^^^^^^^^^^^^^^" + s);
+            logger.info("***************client invoked*************************************");
         }
     }
 }

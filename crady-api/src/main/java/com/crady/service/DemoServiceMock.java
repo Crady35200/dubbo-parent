@@ -6,7 +6,7 @@ package com.crady.service;
  * @desc:
  **/
 public class DemoServiceMock implements DemoService {
-    public User say(String words){
+    public User say(String words) {
         String s = "--------------------------------------------------------------服务降级 : " + words;
         System.out.println(s);
         return new User();

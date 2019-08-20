@@ -14,35 +14,35 @@
  - limitations under the License.
 -->
 <assembly>
-	<id>assembly</id>
-	<formats>
-		<format>tar.gz</format>
-	</formats>
-	<includeBaseDirectory>true</includeBaseDirectory>
-	<fileSets>
-		<fileSet>
-			<directory>${project.build.directory}/dubbo/META-INF/assembly/bin</directory>
-			<outputDirectory>bin</outputDirectory>
-			<fileMode>0755</fileMode>
-		</fileSet>
-		<fileSet>
-			<directory>src/main/resources</directory>
-			<excludes>  
-                <exclude>/META-INF/spring/*.xml</exclude>  
-                <exclude>/META-INF/spring</exclude>  
-                <exclude>/META-INF</exclude>  
-                <exclude>/mybatis/*.xml</exclude>  
-                <exclude>/mybatis</exclude>  
-            </excludes>  
-			<outputDirectory>conf</outputDirectory>
-			<fileMode>0644</fileMode>
-		</fileSet>
-	</fileSets>
-	<dependencySets>
-		<dependencySet>
-			<outputDirectory>lib</outputDirectory>
-			<scope>runtime</scope>
-		</dependencySet>
-	</dependencySets>
-	
+    <id>assembly</id>
+    <formats>
+        <format>tar.gz</format>
+    </formats>
+    <includeBaseDirectory>true</includeBaseDirectory>
+    <fileSets>
+        <fileSet>
+            <directory>${project.build.directory}/dubbo/META-INF/assembly/bin</directory>
+            <outputDirectory>bin</outputDirectory>
+            <fileMode>0755</fileMode>
+        </fileSet>
+        <fileSet>
+            <directory>src/main/resources</directory>
+            <excludes>
+                <exclude>/META-INF/spring/*.xml</exclude>
+                <exclude>/META-INF/spring</exclude>
+                <exclude>/META-INF</exclude>
+                <exclude>/mybatis/*.xml</exclude>
+                <exclude>/mybatis</exclude>
+            </excludes>
+            <outputDirectory>conf</outputDirectory>
+            <fileMode>0644</fileMode>
+        </fileSet>
+    </fileSets>
+    <dependencySets>
+        <dependencySet>
+            <outputDirectory>lib</outputDirectory>
+            <scope>runtime</scope>
+        </dependencySet>
+    </dependencySets>
+
 </assembly>

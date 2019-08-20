@@ -25,11 +25,11 @@ public class DemoController {
 
     @RequestMapping("demo")
     @ResponseBody
-    public Object hi(){
+    public Object hi() {
 
         logger.info("controller invoked***************************************************************");
         User result = demoService.say(null);
-        logger.info("controller invoked.....{}",result);
+        logger.info("controller invoked.....{}", result);
         return result;
     }
 }

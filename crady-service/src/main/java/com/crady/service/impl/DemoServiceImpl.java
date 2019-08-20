@@ -16,7 +16,8 @@ import java.util.Date;
 @Service
 public class DemoServiceImpl implements DemoService {
     private static final Logger logger = LoggerFactory.getLogger(DemoServiceImpl.class);
-    public User say(String words){
+
+    public User say(String words) {
         String s = "--------------------------------------------------------------you say : " + words;
         logger.info(s);
         User user = new User();
