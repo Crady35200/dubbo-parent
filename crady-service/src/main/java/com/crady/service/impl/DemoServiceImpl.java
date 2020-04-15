@@ -1,6 +1,7 @@
 package com.crady.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
+import com.crady.exception.MyException;
 import com.crady.service.DemoService;
 import com.crady.service.User;
 import org.slf4j.Logger;
@@ -27,5 +28,9 @@ public class DemoServiceImpl implements DemoService {
         user.setBirthDay(new Date());
         user.setDesc(words);
         return user;
+    }
+
+    public String testException(String msg){
+        throw new MyException("test exception issues");
     }
 }

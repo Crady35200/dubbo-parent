@@ -11,4 +11,9 @@ public class DemoServiceMock implements DemoService {
         System.out.println(s);
         return new User();
     }
+
+    @Override
+    public String testException(String msg) {
+        return "error test failback";
+    }
 }

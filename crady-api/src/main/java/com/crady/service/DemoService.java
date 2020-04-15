@@ -8,4 +8,6 @@ package com.crady.service;
 public interface DemoService {
 
     public User say(String words);
+
+    public String testException(String msg);
 }
