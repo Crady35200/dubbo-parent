@@ -17,7 +17,7 @@
     </modules>
 
     <properties>
-        <spring.version>5.0.6.RELEASE</spring.version>
+        <spring.version>5.2.5.RELEASE</spring.version>
         <dubbo.version>2.6.4</dubbo.version>
         <zk.version>3.4.12</zk.version>
         <curator.version>4.0.1</curator.version>
